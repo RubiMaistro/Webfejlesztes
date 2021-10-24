@@ -4,9 +4,11 @@
 
     $name = $email = "";
 
+    // Save the first part of email
     $username = $_SESSION["username"];
     list($name, $email) = explode("@", $username);
 
+    // Select the color
     switch($_SESSION['color']){
         case "piros":
             $color = "red";
@@ -41,11 +43,13 @@
 <body class="welcome-body">
     <div class="hello">
         <?php
+            // Print the welcome message
             echo '<div>Hello <b style="color:' .$color. ';">'. $name .'</b>! Welcome in my website! Your color is ' .$color .'.</div>';
         ?>
     </div>
     <div style="margin-top: 50px;">
         <?php
+            // Print the color
             echo '<div style="background-color:'. $color .'; width: 200px; height: 200px; border-radius: 50%; text-align: center; "></div>';
         ?>
     </div>

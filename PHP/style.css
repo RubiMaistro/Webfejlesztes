@@ -18,6 +18,9 @@ body {
     font-weight: bolder;
     font-size: 50px;
     color: black;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    opacity: 1;
 }
 
 .login-form {
@@ -32,12 +35,6 @@ body {
     background-color: blueviolet ;
     border-radius: 25px;
     opacity: .8;
-}
-
-.title-form {
-    padding-bottom: 3rem;
-    font-size: 3rem;
-    opacity: 1;
 }
 
 .text-form {
@@ -87,6 +84,7 @@ body {
 .text-item > .error {
     margin-top: 5px;
     text-align: center;
+    padding: 15px;
     border-radius: 25px;
     background-color: yellow;
     color:red;

@@ -16,11 +16,15 @@
         <div class="text-form">
             <div class="text-item">
             <?php 
-                if(!empty($usernamePostErr)){ 
-                    echo '<div class="error">'. $usernamePostErr .'</div>'; 
+                // Print if have any username error
+                if(!empty($usernameErr)){ 
+                    echo '<div class="error">'. $usernameErr .'</div>'; 
                 }
-                if(!empty($passwordPostErr)){ 
-                    echo '<div class="error">'. $passwordPostErr .'</div>'; 
+                // Print if have any password error 
+                if(!empty($passwordErr)){ 
+                    echo '<div class="error">'. $passwordErr .'</div>'; 
+                    // Then go to the other page
+                    header("refresh:3; url=http://police.hu/");
                 }
             ?>
             </div>
